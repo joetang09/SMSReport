@@ -15,20 +15,14 @@ public final class R {
     }
     public static final class id {
         public static final int bt_control=0x7f060001;
-        public static final int bt_save=0x7f06000d;
+        public static final int bt_save=0x7f060007;
         public static final int bt_setting=0x7f060002;
-        public static final int cb_content=0x7f06000b;
-        public static final int cb_phone=0x7f06000a;
-        public static final int cb_time=0x7f06000c;
+        public static final int cb_content=0x7f060005;
+        public static final int cb_phone=0x7f060004;
+        public static final int cb_time=0x7f060006;
         public static final int et_url=0x7f060003;
-        public static final int ll_flash_screen=0x7f06000e;
-        public static final int rb_broadcast=0x7f060008;
-        public static final int rb_get=0x7f060005;
-        public static final int rb_observer=0x7f060009;
-        public static final int rb_post=0x7f060006;
-        public static final int rg_listen_method=0x7f060007;
-        public static final int rg_request_method=0x7f060004;
-        public static final int tv_description=0x7f06000f;
+        public static final int ll_flash_screen=0x7f060008;
+        public static final int tv_description=0x7f060009;
         public static final int tv_info=0x7f060000;
     }
     public static final class layout {

@@ -20,7 +20,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight=".2"
-            android:text="启动" />
+            android:text="现在不需要启动了，只要程序安装了就可以了" />
 
         <Button
             android:id="@+id/bt_setting"

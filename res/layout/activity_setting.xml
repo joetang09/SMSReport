@@ -24,50 +24,6 @@
         
     </LinearLayout>
     
-    <RadioGroup 
-        android:id="@+id/rg_request_method"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        >
-        
-        <RadioButton 
-            android:id="@+id/rb_get"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="GET"
-            />
-        
-        
-        <RadioButton 
-            android:id="@+id/rb_post"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="POST"
-            />
-    </RadioGroup>
-    
-        <RadioGroup 
-        android:id="@+id/rg_listen_method"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        >
-        
-        <RadioButton 
-            android:id="@+id/rb_broadcast"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="广播"
-            />
-        
-        
-        <RadioButton 
-            android:id="@+id/rb_observer"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="观察者"
-            />
-    </RadioGroup>
-    
     <TextView 
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

@@ -21,12 +21,6 @@ import com.sergey.smsreport.stc.SMSStatic;
 public class SettingActivity extends BaseActivity{
 
 	private EditText etUrl = null;
-	private RadioGroup rgRequestMethod = null;
-	private RadioButton rbGet = null;
-	private RadioButton rbPost = null;
-	private RadioGroup rgListenMethod = null;
-	private RadioButton rbBroadCast = null;
-	private RadioButton rbObserver = null;
 	private CheckBox cbContent = null;
 	private CheckBox cbPhoneNumber = null;
 	private CheckBox cbTime = null;
@@ -41,12 +35,6 @@ public class SettingActivity extends BaseActivity{
 	@Override
 	protected void initView() {
 		etUrl = (EditText)findViewById(R.id.et_url);
-		rgRequestMethod = (RadioGroup) findViewById(R.id.rg_request_method);
-		rbGet = (RadioButton)findViewById(R.id.rb_get);
-		rbPost = (RadioButton)findViewById(R.id.rb_post);
-		rgListenMethod = (RadioGroup) findViewById(R.id.rg_listen_method);
-		rbBroadCast = (RadioButton)findViewById(R.id.rb_broadcast);
-		rbObserver = (RadioButton)findViewById(R.id.rb_observer);
 		cbContent = (CheckBox) findViewById(R.id.cb_content);
 		cbPhoneNumber = (CheckBox)findViewById(R.id.cb_phone);
 		cbTime = (CheckBox)findViewById(R.id.cb_time);
@@ -60,18 +48,7 @@ public class SettingActivity extends BaseActivity{
 		cbContent.setChecked(sharedPreferences.getBoolean("content", false));
 		cbPhoneNumber.setChecked(sharedPreferences.getBoolean("phone", false));
 		cbTime.setChecked(sharedPreferences.getBoolean("time", false));
-		if(sharedPreferences.getString("method", "post").equals("post")){
-			rbPost.setChecked(true);
-		}else{
-			rbGet.setChecked(true);
-		}
-		if(sharedPreferences.getString("listen", "boardcast").equals("boardcast")){
-			rbBroadCast.setChecked(true);
-		}else{
-			rbObserver.setChecked(true);
-		}
 		btSave.setOnClickListener(new OnClickListener() {
-			
 			@Override
 			public void onClick(View v) {
 				Editor editor = sharedPreferences.edit();
@@ -79,8 +56,6 @@ public class SettingActivity extends BaseActivity{
 				editor.putBoolean("phone", cbPhoneNumber.isChecked());
 				editor.putBoolean("time", cbTime.isChecked());
 				editor.putString("url", etUrl.getText().toString());
-				editor.putString("method", rbGet.isChecked() ? "get" : "post");
-				editor.putString("listener", rbObserver.isChecked() ? "observer" : "boardcast");
 				editor.commit();
 			}
 		});
