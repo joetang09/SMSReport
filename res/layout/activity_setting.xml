@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <LinearLayout 
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+        >
+        
+        <TextView 
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_weight=".8"
+            android:text="URL"
+            />
+        <EditText 
+            android:id="@+id/et_url"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_weight=".2"
+            />
+        
+    </LinearLayout>
+    
+    <RadioGroup 
+        android:id="@+id/rg_request_method"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        
+        <RadioButton 
+            android:id="@+id/rb_get"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GET"
+            />
+        
+        
+        <RadioButton 
+            android:id="@+id/rb_post"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="POST"
+            />
+    </RadioGroup>
+    
+        <RadioGroup 
+        android:id="@+id/rg_listen_method"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        
+        <RadioButton 
+            android:id="@+id/rb_broadcast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="广播"
+            />
+        
+        
+        <RadioButton 
+            android:id="@+id/rb_observer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="观察者"
+            />
+    </RadioGroup>
+    
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="参数\n参数名为smsreport_加上下边单选框的英文，比如smsreport_phone_number"
+        />
+    <CheckBox 
+        android:id="@+id/cb_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="phone_number(电话号码)"
+        />
+    <CheckBox 
+        android:id="@+id/cb_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="content(内容)"
+        />
+    <CheckBox 
+        android:id="@+id/cb_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="time(时间)"
+        />
+    
+    <LinearLayout 
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="bottom"
+		android:orientation="horizontal"
+        >
+        <Button 
+            android:id="@+id/bt_save"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight=".5"
+            android:text="保存"
+            />
+        
+    </LinearLayout>
+
+</LinearLayout>
